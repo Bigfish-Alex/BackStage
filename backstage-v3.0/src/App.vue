@@ -38,7 +38,7 @@ body,html{
 .el-menu{
   border: none;
 }
-.el-submenu__title:focus, .el-submenu__title:hover{
+/* .el-submenu__title:focus, .el-submenu__title:hover{
   background: #009688!important;
 }
 
@@ -50,5 +50,5 @@ body,html{
     border-left: 4px solid #fff;
     color: #fff !important;
     background: #009688 !important;
-}
+} */
 </style>

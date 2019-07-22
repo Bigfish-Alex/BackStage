@@ -4,7 +4,8 @@ import Router from 'vue-router'
 //组件模块
 import Login from './components/login/login'
 import Index from './components/index/index'
-import Page001 from './components/page001/page001'
+import echartsDemo from './components/echartsDemo/echartsDemo'
+import tableDemo from './components/tableDemo/tableDemo'
 
  
 Vue.use(Router)
@@ -15,7 +16,8 @@ export default new Router({
     { path: '/login', name: 'Login', component: Login },
     { path: '/index', name: 'Index', component: Index ,
       children:[
-        {path: '/page001', name: 'page001', component: Page001}
+        {path: '/echartsDemo', name: 'echartsDemo', component: echartsDemo},
+        {path: '/tableDemo', name: 'tableDemo', component: tableDemo},
       ]
     }
   ]

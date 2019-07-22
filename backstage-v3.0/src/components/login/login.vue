@@ -46,7 +46,7 @@ export default {
               this.isShowPasswordWarn=true;
               return false;
           }
-          this.$router.push({path:'index'});
+          this.$router.push({path:'echartsDemo'});
       },
       listenUsernameInput(){
           if( this.username.length<=0 ){
