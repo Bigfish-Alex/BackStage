@@ -6,6 +6,7 @@ import Login from './components/login/login'
 import Index from './components/index/index'
 import echartsDemo from './components/echartsDemo/echartsDemo'
 import tableDemo from './components/tableDemo/tableDemo'
+import progressDemo from './components/progressDemo/progressDemo'
 
  
 Vue.use(Router)
@@ -18,6 +19,7 @@ export default new Router({
       children:[
         {path: '/echartsDemo', name: 'echartsDemo', component: echartsDemo},
         {path: '/tableDemo', name: 'tableDemo', component: tableDemo},
+        {path: '/progressDemo', name: 'progressDemo', component: progressDemo},
       ]
     }
   ]

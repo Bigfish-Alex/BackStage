@@ -31,6 +31,7 @@
             <span>常用组件</span>
           </template>
           <el-menu-item index="/tableDemo">表格</el-menu-item>
+          <el-menu-item index="/progressDemo">进度条</el-menu-item>
         </el-submenu>
       </el-menu>
     </div>
@@ -86,7 +87,7 @@ export default {
   data() {
     return {
       name: "this is index!",
-      isCollapse:true
+      isCollapse:false
     };
   },
   methods: {
