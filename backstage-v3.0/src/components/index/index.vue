@@ -16,29 +16,40 @@
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
-        router        
+        router
       >
         <el-submenu index="1">
           <template slot="title">
             <i class="el-icon-s-data"></i>
             <span>Echarts图表</span>
           </template>
-          <el-menu-item index="/echartsDemo">普通数据图</el-menu-item>
+          <el-menu-item index="/echartsDemo">
+            <i class="el-icon-pie-chart"></i>普通数据图
+          </el-menu-item>
         </el-submenu>
         <el-submenu index="2">
           <template slot="title">
             <i class="el-icon-eleme"></i>
             <span>常用组件</span>
           </template>
-          <el-menu-item index="/tableDemo">表格</el-menu-item>
-          <el-menu-item index="/progressDemo">进度条</el-menu-item>
+          <el-menu-item index="/tableDemo">
+            <i class="el-icon-files"></i> 表格
+          </el-menu-item>
+          <el-menu-item index="/progressDemo">
+            <i class="el-icon-finished"></i> 进度条
+          </el-menu-item>
+          <el-menu-item index="/formDemo">
+            <i class="el-icon-tickets"></i> 表单
+          </el-menu-item>
+          <el-menu-item index="/carouselDemo">
+            <i class="el-icon-reading"></i> 轮播图
+          </el-menu-item>
         </el-submenu>
       </el-menu>
     </div>
 
     <!-- 内容区域 -->
     <div class="content_container">
-
       <!-- 头部 -->
       <header>
         <div class="fold_menu_container" @click="handleMenuColasp">
@@ -48,13 +59,9 @@
         <!-- <div class="userinfo_container">
           ALEX
           <i class="el-icon-caret-bottom"></i>
-        </div> -->
+        </div>-->
 
-        <el-menu 
-        default-active="1" 
-        style="float:right;" 
-        class="el-menu-demo" 
-        mode="horizontal">
+        <el-menu default-active="1" style="float:right;" class="el-menu-demo" mode="horizontal">
           <el-menu-item index="1">处理中心</el-menu-item>
           <el-submenu index="2">
             <template slot="title">我的工作台</template>
@@ -69,14 +76,15 @@
             </el-submenu>
           </el-submenu>
           <el-menu-item index="3" disabled>消息中心</el-menu-item>
-          <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+          <el-menu-item index="4">
+            <a href="https://www.ele.me" target="_blank">订单管理</a>
+          </el-menu-item>
         </el-menu>
-
       </header>
 
       <!-- 路由区域 -->
       <div class="main_view_container">
-        <router-view/>
+        <router-view />
       </div>
     </div>
   </div>
@@ -87,7 +95,7 @@ export default {
   data() {
     return {
       name: "this is index!",
-      isCollapse:false
+      isCollapse: false
     };
   },
   methods: {
@@ -97,8 +105,8 @@ export default {
     handleClose(key, keyPath) {
       console.log(key, keyPath);
     },
-    handleMenuColasp(){
-      this.isCollapse=!this.isCollapse;
+    handleMenuColasp() {
+      this.isCollapse = !this.isCollapse;
     }
   }
 };
